@@ -1,0 +1,18 @@
+name: CustomPlayerTime
+version: 2.0.0
+main: org.whitehack97.CustomPlayerTime.Main.CustomPlayerTime
+author: Rean KR
+description: give access control time and weather each player.
+
+commands:
+  CustomPlayerTime.Main:
+    description: CustomPlayerTime Main Command
+    aliases: [cpt, customplayertime, pt]
+  시간설정:
+    description: CustomPlayerTime Main Command
+  날씨설정:
+    description: CustomPlayerTime Main Command
+permission:
+  customplayertime.*:
+    description: Not used yet.
+    default: OP
