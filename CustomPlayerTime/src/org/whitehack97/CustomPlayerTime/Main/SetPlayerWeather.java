@@ -12,8 +12,8 @@ public class SetPlayerWeather
     if (!isOK(p, args)) {
       return true;
     }
-    if (p.hasPermission("customplayertime.setweather"))
-    {
+    /*if (p.hasPermission("customplayertime.setweather"))
+    {*/
       if (args[0].equalsIgnoreCase("맑음"))
       {
         player.setPlayerWeather(WeatherType.CLEAR);
@@ -37,10 +37,8 @@ public class SetPlayerWeather
       player.sendMessage(CustomPlayerTime.Prefix + ChatColor.RED + "날씨를 알 수 없습니다. 사용법 : /날씨설정 [변수]");
       player.sendMessage(CustomPlayerTime.Prefix + ChatColor.RED + "사용 가능한 변수 : " + ChatColor.BLUE + "맑음, 폭풍, 초기화");
       return true;
-    }
-    player.sendMessage(CustomPlayerTime.Prefix + ChatColor.RED + "개인 날씨를 설정할 수 있는 권한이 없습니다.");
-    
-    return true;
+    /*}
+    player.sendMessage(CustomPlayerTime.Prefix + ChatColor.RED + "개인 날씨를 설정할 수 있는 권한이 없습니다.");*/
   }
   
   public static boolean isOK(Player player, String[] args)
